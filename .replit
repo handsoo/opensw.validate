@@ -1,0 +1,9 @@
+modules = ["bash:v1-20231215-e6d471c"]
+run = "./valid-date.sh may 27 2024"
+
+[nix]
+channel = "stable-23_05"
+
+[deployment]
+run = ["sh", "-c", "./valid-date.sh may 27 2024"]
+deploymentTarget = "cloudrun"
